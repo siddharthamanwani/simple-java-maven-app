@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                gv = load 'pipeline/development/script.dev.groovy'
+                gv = load 'jenkins/script.dev.groovy'
                 gv.load_check()
                 echo "build stage"
             }
