@@ -7,8 +7,9 @@ pipeline {
             steps {
                 script {
                     gv = load 'jenkins/script.dev.groovy'
+                    echo "build stage"
                     gv.load_check()
-                    //echo "build stage"
+                    echo "build stage 2"
                 }
             }
         }
